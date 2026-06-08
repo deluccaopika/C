@@ -4,17 +4,20 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int n1 = 0;
 	
-	printf("Digite um número: ");
-	scanf("%i", n1);
+	int numero1 = 0;
 	
-	if (n1 %2 == 0) {
-		printf("Esse número é par!");
+	printf("Digite o número: ");
+	scanf("%i", &numero1);
+	
+	
+	if(numero1 > 0) {
+		printf("O número 1 é positivo!");
 	}
 	
-	else {
-		printf("Esse número é ímpar!");
+	else if(numero1 < 0) {
+		printf("O número 2 é negativo!");
 	}
+	
 	return 0;
 }
